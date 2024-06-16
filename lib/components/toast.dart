@@ -1,0 +1,55 @@
+import 'package:another_flushbar/flushbar_route.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:another_flushbar/flushbar.dart';
+
+class Toast {
+  // static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
+  static void flushBarErrorMessage(String message, BuildContext context) {
+    showFlushbar(
+      context: context,
+      flushbar: Flushbar(
+        forwardAnimationCurve: Curves.decelerate,
+        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: const EdgeInsets.all(15),
+        message: message,
+        duration: const Duration(seconds: 3),
+        borderRadius: BorderRadius.circular(8),
+        flushbarPosition: FlushbarPosition.BOTTOM,
+        backgroundColor: Colors.red,
+        reverseAnimationCurve: Curves.easeInOut,
+        positionOffset: 20,
+        icon: const Icon(
+          Icons.error,
+          size: 28,
+          color: Colors.white,
+        ),
+      )..show(context),
+    );
+  }
+
+  static void flushBarSuccessMessage(String message, BuildContext context) {
+    showFlushbar(
+      context: context,
+      flushbar: Flushbar(
+        forwardAnimationCurve: Curves.decelerate,
+        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: const EdgeInsets.all(15),
+        message: message,
+        duration: const Duration(seconds: 3),
+        borderRadius: BorderRadius.circular(8),
+        flushbarPosition: FlushbarPosition.BOTTOM,
+        backgroundColor: Colors.green,
+        reverseAnimationCurve: Curves.easeInOut,
+        positionOffset: 20,
+        isDismissible: true,
+        icon: const Icon(
+          Icons.check_circle,
+          size: 28,
+          color: Colors.white,
+        ),
+      )..show(context),
+    );
+  }
+}
