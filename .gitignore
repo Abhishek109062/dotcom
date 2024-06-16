@@ -45,3 +45,4 @@ app.*.map.json
 *.lock
 pubspec.lock
 *.lock
+lib/constants.dart
