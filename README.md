@@ -4,7 +4,10 @@ E-Commerce App along with Admin Panel
 
 
 
-https://github.com/Abhishek109062/dotcom/assets/72486443/b13bcde4-535d-470d-8f2e-95def470c281
+
+
+https://github.com/Abhishek109062/dotcom/assets/72486443/d0c5dcdc-d3d8-4934-9127-3feec88ae766
+
 
 
 
