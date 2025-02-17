@@ -86,6 +86,7 @@ List location_list = [
     'name': 'Uttarakhand',
   },
 ];
+List<String> temp = [];
 
 class ApiConstants {
   static String baseUrl = "http://157.245.104.57:8080";
